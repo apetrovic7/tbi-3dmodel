@@ -3,7 +3,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
 
 function Model() {
-  const { scene } = useGLTF("https://localhost:7296/api/models/getModel");  // Use HTTPS for consistency
+  const { scene } = useGLTF("https://localhost:7296/api/models/getModel");
   return <primitive object={scene} scale={1} />;
 }
 
